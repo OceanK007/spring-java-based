@@ -11,7 +11,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 /** To initialize the application **/
 /** Replacement of: web.xml **/
-public class ApplicationInitializer implements WebApplicationInitializer
+/*public class ApplicationInitializer implements WebApplicationInitializer
 {
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException 
@@ -24,11 +24,11 @@ public class ApplicationInitializer implements WebApplicationInitializer
 		servlet.setLoadOnStartup(1);
 		servlet.addMapping("/");
 	}
-}
+}*/
 
 /** Now you can write the above class even more concisely [and it’s the preferred way], 
 by extending AbstractAnnotationConfigDispatcherServletInitializer base class **/
-/*public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
+public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
 {
 	@Override
 	protected Class<?>[] getRootConfigClasses() 
@@ -47,4 +47,4 @@ by extending AbstractAnnotationConfigDispatcherServletInitializer base class **/
 	{
 		return new String[] {"/"};
 	}
-}*/
+}
