@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Spring Annotation Based</title>
+		<title>Spring Java Based</title>
 	</head>
 	<body>
 		Hello ${userModel.name}
